@@ -1,26 +1,19 @@
-package com.example.ApplicationFindMyPet.entitites;
+package com.example.ApplicationFindMyPet.models;
 
-import javax.persistence.*;
+public class AnimalPierdutResponse {
 
-@Entity
-@Table
-public class AnimalPierdut {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idAnimalPierdut;
     private String numeAnimal;
-
     private String tip;
     private String rasa;
     private String descriere;
-    private String locatiePierdut;
     private String numeStapan;
     private String prenumeStapan;
     private String mail;
     private String telefon;
+    private Double longitudine;
+    private Double latitudine;
 
-    public AnimalPierdut() {
+    public AnimalPierdutResponse() {
     }
 
     public String getNumeAnimal() {
@@ -29,14 +22,6 @@ public class AnimalPierdut {
 
     public void setNumeAnimal(String numeAnimal) {
         this.numeAnimal = numeAnimal;
-    }
-
-    public int getIdAnimalPierdut() {
-        return idAnimalPierdut;
-    }
-
-    public void setIdAnimalPierdut(int idAnimalPierdut) {
-        this.idAnimalPierdut = idAnimalPierdut;
     }
 
     public String getTip() {
@@ -61,14 +46,6 @@ public class AnimalPierdut {
 
     public void setDescriere(String descriere) {
         this.descriere = descriere;
-    }
-
-    public String getLocatieVazut() {
-        return locatiePierdut;
-    }
-
-    public void setLocatieVazut(String locatieVazut) {
-        this.locatiePierdut = locatieVazut;
     }
 
     public String getNumeStapan() {
@@ -101,5 +78,21 @@ public class AnimalPierdut {
 
     public void setTelefon(String telefon) {
         this.telefon = telefon;
+    }
+
+    public Double getLongitudine() {
+        return longitudine;
+    }
+
+    public void setLongitudine(Double longitudine) {
+        this.longitudine = longitudine;
+    }
+
+    public Double getLatitudine() {
+        return latitudine;
+    }
+
+    public void setLatitudine(Double latitudine) {
+        this.latitudine = latitudine;
     }
 }

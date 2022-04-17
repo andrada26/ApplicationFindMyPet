@@ -11,7 +11,7 @@ public class AnimalVazut {
     private String tip;
     private String rasa;
     private String descriere;
-    private String locatiePierdut;
+    private String locatieVazut;
     private int idUser;
 
     public AnimalVazut() {
@@ -50,11 +50,11 @@ public class AnimalVazut {
     }
 
     public String getLocatiePierdut() {
-        return locatiePierdut;
+        return locatieVazut;
     }
 
     public void setLocatiePierdut(String locatiePierdut) {
-        this.locatiePierdut = locatiePierdut;
+        this.locatieVazut= locatiePierdut;
     }
 
     public int getIdUser() {
